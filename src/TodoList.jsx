@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./TodoList.css";
 export default function TodoList() {
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState("");
