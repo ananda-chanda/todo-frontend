@@ -1,0 +1,175 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ /* Container styles */
+ .top {
+    min-height: 500px;
+    min-width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(25, 42, 86);
+    background: linear-gradient(145deg, #1f2a3c, #2b3a50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+ }
+ 
+ /* Heading styles */
+ h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+ }
+ 
+ /* Input field styling */
+ .op {
+    height: 40px;
+    width: 70%;
+    padding: 0 15px;
+    border-radius: 25px;
+    border: 1px solid #62a6ff;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    background: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+ }
+ 
+ .op:focus {
+    border: 1px solid #316fc1;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(49, 111, 193, 0.2);
+ }
+ 
+ /* Button styling */
+ .btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #316fc1;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+ }
+ 
+ .btn:hover {
+    background-color: #62a6ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(98, 166, 255, 0.4);
+ }
+ 
+ /* Todo List Styles */
+ .Inlist1 {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #2b3a50;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .maintodo {
+    background-color: #316fc1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+ }
+ 
+ ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ /* Individual Todo item */
+ .Withinlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3c516d;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .Withinlist:hover {
+    background-color: #62a6ff;
+    transform: scale(1.02);
+ }
+ 
+ li {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+    color: #fff;
+ }
+ 
+ li span {
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ li span[style*="line-through"] {
+    color: #ccc;
+    text-decoration: line-through;
+ }
+ 
+ /* Action icons */
+ .del-icons i,
+ .Edit,
+ .test {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+ }
+ 
+ .del-icons i:hover {
+    color: #ff4c4c;
+ }
+ 
+ .Edit:hover {
+    color: #ffd700;
+ }
+ 
+ .test:hover {
+    color: #32cd32;
+ }
+ 
+ /* Mark all as done button */
+ button[onclick="MarkAllDone"] {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #62a6ff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+ }
+ 
+ button[onclick="MarkAllDone"]:hover {
+    background: #316fc1;
+    transform: translateY(-2px);
+ }
+ 
